@@ -1,6 +1,7 @@
 from pandas_datareader import data as web
 import datetime as dt
 import pandas as pd
+import codecs
 
 
 #Loading data
@@ -28,4 +29,5 @@ df = web.DataReader( 'AAPL' , 'yahoo' , start, end)
 df.to_html( 'apple.html' )
 
 #control that func. find another alternative to read the html file
-df = pd.read_html( "apple.html" )
+df = pd.read_html( "apple.html")
+print(df)

@@ -1,3 +1,0 @@
-lxml
-pandas>=0.23
-requests>=2.19.0
