@@ -3,6 +3,7 @@ import datetime as dt
 import pandas as pd
 import codecs
 
+#chapter 1-2
 
 #Loading data
 start = dt.datetime(2019,1,1)
