@@ -32,3 +32,5 @@ df.to_html( 'apple.html' )
 #control that func. find another alternative to read the html file
 df = pd.read_html( "apple.html")
 print(df)
+
+# fk nın ingilizcesini bul fk rate i hesapla. 
