@@ -20,17 +20,14 @@ apple.dropna( inplace = True )
 print (apple.head())
 
 ax1 = plt.subplot2grid(( 6 , 1 ),( 0 , 0 ), rowspan = 4 , colspan = 1 )
-
 ax2 = plt.subplot2grid(( 6 , 1 ),( 4 , 0 ), rowspan = 2 , colspan = 1 , sharex =ax1)
 
-ax3 = plt.subplot2grid(( 6 , 1 ),( 0 , 0 ), rowspan = 4 , colspan = 1 )
 
 
 ax1.plot(apple.index, apple[ 'Adj Close' ], color = 'blue', label = 'Adj Close')
 ax1.plot(apple.index, apple[ '100d_ma' ], color = 'orange', label = '100d_ma')
 ax2.fill_between(apple.index, apple[ 'Volume' ], color = 'blue', label = 'Volume')
-ax3.plot(apple.index, apple[ 'PCT_Change' ], color = 'Pink', label = 'PCT_CHANGE')
-ax3.fill_between(apple.index, apple[ 'HL_PCT' ], color='Brown')
-plt.tight_layout()
+print(apple[ 'PCT_Change' ])
+print(apple[ 'HL_PCT' ])
 leg = plt.legend(loc='upper left')
 plt.show()
